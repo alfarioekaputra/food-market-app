@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".ui.auth.signin.SigninFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFF"
+        android:layout_marginTop="24dp"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp"
+        android:paddingTop="26dp"
+        android:orientation="vertical">
+
+    <ImageView
+        android:layout_gravity="center"
+        android:src="@drawable/ic_picture_empty"
+        android:layout_width="110dp"
+        android:layout_height="110dp"/>
+
+    <TextView
+        style="@style/TextView.PoppinsNormal16sp020202"
+        android:layout_marginTop="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/full_name" />
+
+    <EditText
+        style="@style/EditText.PoppinsNormal14sp8D92A3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:background="@drawable/shape_rectangle_outline_8_020202"
+        android:hint="@string/type_your_fullname"
+        android:minHeight="48dp"
+        android:padding="10dp"
+        android:autofillHints=""
+        android:inputType="textPersonName" />
+
+    <TextView
+        style="@style/TextView.PoppinsNormal16sp020202"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/email_address" />
+
+    <EditText
+        style="@style/EditText.PoppinsNormal14sp8D92A3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:background="@drawable/shape_rectangle_outline_8_020202"
+        android:hint="@string/type_your_email_address"
+        android:minHeight="48dp"
+        android:padding="10dp"
+        android:autofillHints=""
+        android:inputType="textEmailAddress" />
+
+    <TextView
+        android:layout_marginTop="16dp"
+        style="@style/TextView.PoppinsNormal16sp020202"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/password" />
+
+    <EditText
+        style="@style/EditText.PoppinsNormal14sp8D92A3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:background="@drawable/shape_rectangle_outline_8_020202"
+        android:hint="@string/type_your_password"
+        android:inputType="textPassword"
+        android:minHeight="48dp"
+        android:padding="10dp"
+        android:importantForAutofill="no" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnContinue"
+        style="@style/Button.Primary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/btn_continue"
+        android:textAllCaps="false" />
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>
